@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Apply the font-family globally */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Optional: Ensure headings and other elements inherit the font */
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: inherit;
+}
+
+/* Updated style for the header h1 */
+header h1 {
+    
+    font-size: 3.5rem;
+    color: #f0f2f8;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Adds depth */
+    margin: 0;
+}
+
+/* Updated background color for the navbar */
+header {
+    background-color: #007bff; /* Bright blue for a lively and inviting look */
+}
+
+/* Updated Header Background */
+.bg-gradient {
+    background: linear-gradient(90deg, #0dbcd3, #001380)!important;/* Green to teal gradient */
+    border-bottom: 5px solid #ffdd00; /* Yellow border for a playful touch */
+}
+
+/* Style for the header p */
+header p {
+    
+    font-size: 1.2rem;
+    color: #2c1a8d;
+    margin: 0;
+    font-style: italic; /* Adds a whimsical touch */
+}
+
+/* Tagline Style */
+header .tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #ffdd00; /* Bright yellow for contrast */
+    font-style: italic;
+    margin: 0;
+}
+
+/* Style for the navigation bar */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+/* header nav ul li {
+    font-family: 'Verdana', sans-serif;
+} */
+
+header nav ul li a {
+    text-decoration: none;
+    
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+header nav ul li a:hover {
+    color: #ffdd00; /* Yellow on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a hover shadow */
+}
+
+/* logo style */
+logo{
+    border-radius: 50%;
+}
+
+/* Set a maximum height for carousel images */
+.carousel-inner img {
+    max-height: 400px; /* Adjust the height as needed */
+    max-width:100%;
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+}
