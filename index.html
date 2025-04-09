@@ -6,49 +6,67 @@
     <title>WonderOasis ThemePark</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
 </head>
 <body>
     <!-- Header Section -->
-    <header class="bg-gradient text-white py-4">
+    <header class="bg-gradient text-white py-3 fixed-top">
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Logo and Title -->
-                <div class="col-md-8 d-flex align-items-center justify-content-start">
-                    <img src="assets/images/Logo/WonderOasis_logo.png" alt="WonderOasis Logo" class="logo rounded-circle me-3" style="height: 80px; width: 80px; object-fit: cover;">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/images/Logo/WonderOasis_logo.png" alt="WonderOasis Logo" class="logo rounded-circle me-3 shadow-lg border border-3 border-white">
                     <div>
-                        <h1 class="display-6 text-md-start text-center">WonderOasis ThemePark</h1>
-                        <p class="tagline text-md-start text-center">The Mystical Experience Awaits!</p>
+                        <h1 class="h3 mb-0">WonderOasis </h1>
+                        <p class="tagline mb-0">The Mystical Experience Awaits!</p>
                     </div>
+                </a>
+
+                <!-- Toggler Button for Smaller Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                </button>
+
+                <!-- Collapsible Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#attractions">Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#tickets">Tickets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Navigation -->
-                <div class="col-md-4">
-                    <nav class="text-md-end text-center">
-                        <ul class="nav justify-content-center justify-content-md-end flex-wrap">
-                            <li class="nav-item"><a class="nav-link text-white" a g ghref="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#attractions">Attractions</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#tickets">Tickets</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
 
     <!-- Main Section -->
-    <main class="container my-5">
-        <section id="home" class="mb-5">
+    <main class="container my-3 mt-md-5 pt-5">
+        <section id="home" class="mb-10 mt-5 pt-5 ">
             <div class="row align-items-center">
                 <!-- Text Column -->
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="mb-3">Welcome to WonderOasis</h2>
-                    <p class="lead">WonderOasis ThemePark is a magical destination designed to provide unforgettable experiences for visitors of all ages. Whether you're seeking thrilling rides, relaxing water slides, or a chance to connect with nature, WonderOasis has something for everyone!</p>
+                    <p class="lead" style="font-family: 'Poppins', sans-serif; color: #333;">Embark on an unforgettable journey of excitement and wonder at this one-of-a-kind theme park! Here, adventure and fun await every member of the family. Dive into thrilling rides designed for all ages whether you're a little explorer, a bold thrill-seeker, or a family looking to share joyful moments together.
+                        With thrilling rides for all ages, a vibrant water park full of slides and refreshing adventures, and a captivating zoo featuring majestic animals and a mini safari, there's something for everyone. Recharge at the diverse food court offering delicious options, and create unforgettable memories in a place where magic happens.
+                    </p>
+                    <a href="#attractions" class="btn btn-outline-primary mt-3">Explore Attractions</a>
                 </div>
                 <!-- Carousel Column -->
-                <div class="col-md-6">
+                <div class="col-md-6 mt-4">
                     <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -77,9 +95,57 @@
             </div>
         </section>
 
-        <section id="attractions" class="mb-5">
-            <h2 class="text-center mb-3">Our Attractions</h2>
-            <p class="text-center">Explore roller coasters, water rides, and family-friendly activities.</p>
+        <section id="attractions" class="mt mb-5 py-5">
+            <h2 class="text-center">Our Attractions</h2>
+            <p class="text-center mb-4">Explore roller coasters, water rides, and family-friendly activities.</p>
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="assets/images/Roller_coaster.png" class="card-img-top" alt="Roller Coaster">
+                            <div class="card-body">
+                                <h5 class="card-title">Roller Coaster</h5>
+                                <p class="card-text">Experience the thrill of high-speed twists and turns on our world-class roller coasters.</p>
+                                <a href="#explore" class="btn btn-primary">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="assets/images/water_park/Water_Park.png" class="card-img-top" alt="Water Park">
+                            <div class="card-body">
+                                <h5 class="card-title">Water Park</h5>
+                                <p class="card-text">Cool off with exciting water slides, wave pools, and a relaxing lazy river.</p>
+                                <a href="#explore" class="btn btn-primary">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="assets/images/Zoo/animals_in_the_zoo.png" class="card-img-top" alt="Zoo Area">
+                            <div class="card-body">
+                                <h5 class="card-title">Zoo Area</h5>
+                                <p class="card-text">Get up close with exotic animals and enjoy interactive experiences in our zoo area.</p>
+                                <a href="#explore" class="btn btn-primary">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="assets/images/family_and_kids_ride.png" class="card-img-top" alt="Family Rides">
+                            <div class="card-body">
+                                <h5 class="card-title">Family Rides</h5>
+                                <p class="card-text">Enjoy fun and safe rides designed for the entire family to enjoy together.</p>
+                                <a href="#explore" class="btn btn-primary">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="tickets" class="text-center mb-5">
@@ -87,21 +153,126 @@
             <p>Book your tickets online and enjoy exclusive discounts!</p>
             <a href="#" class="btn btn-primary">Book Now</a>
         </section>
+
+        <!-- Testimonials Section -->
+    <section id="reviews" class="my-5 py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonials</h2>
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center">
+                            
+                            <p class="text-center">"Had an amazing time. Enjoyed every minute! WonderOasis Theme park has lot of rides, a zoo and waterpark.The staff are all friendly polite and helpful.</p>
+                            <h5 class="text-center">- Mikael L.</h5>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            
+                            <p class="text-center">"One of the greatest theme parks I have ever been to. The roller coasters are absolutely fantastic and this park is such a good place to to visit."</p>
+                            <h5 class="text-center">- Jiya D.</h5>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            
+                            <p class="text-center">"Amazing time and Amazing rides ,the water park was my favourite and so was Rattling Rollercoaster "</p>
+                            <h5 class="text-center">- Alex P.</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 WonderOasis ThemePark. All rights reserved.</p>
-            <p>Follow us on:
-                <a href="https://facebook.com" class="text-white mx-1">Facebook</a> |
-                <a href="https://twitter.com" class="text-white mx-1">Twitter</a> |
-                <a href="https://instagram.com" class="text-white mx-1">Instagram</a>
-            </p>
-        </div>
-    </footer>
+   
+    <div class="container-fluid footer-container  text-white py-3">
+        
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Bookings</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Prices</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Schools</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Events</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Christmas Experience</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">FAQs</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>About us</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Story</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our Community</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Recuitment</a></li>
+                
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Legal</h5>
+              <ul class="nav flex-column" >
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Website T&C's</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+            </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between  border-top ">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <div class="col-md-6 d-flex justify-content-center justify-content-sm-end mt-3 mt-sm-0">
+                <a href="https://www.facebook.com/Co</div>de.InstituteIRL/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit our Facebook page" class="me-2" style="color: #FFEBD4;"><i class="bi bi-facebook"></i></a>
+                <a href="https://x.com/codeinstitute" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter" class="me-2" style="color: #FFEBD4;"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/codeinstitute/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Follow us on Instagram" class="me-2" style="color: #FFEBD4;"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/code-institute/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Connect with us on LinkedIn" class="me-2" style="color: #FFEBD4;"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <script srcion//fonts.googleapis.com/css2?family=Handle&display=swap"></script>
+</body>
 </html>
+
+
