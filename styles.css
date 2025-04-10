@@ -15,9 +15,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     font-family: inherit;
 }
 
-h2{
+h2,h3{
     color: #e23020;
-    font-family: 'Fredoka One', cursive;
+    
 }
 /* Updated style for the header h1 */
 header .h3 {
@@ -92,17 +92,12 @@ footer ul.nav li a {
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-footer ul.nav li a:hover {
+footer ul.nav li a:hover  {
     color: #ffdd00; /* Highlight with yellow on hover */
     text-decoration: underline; /* Add underline on hover for emphasis */
 }
-/* Footer Paragraph Styling */
-footer p {
-    color: #ffffff; /* Bright white for better visibility */
-    font-size: 1rem; /* Adjust font size for readability */
-    font-weight: 500; /* Slightly bold for prominence */
-    margin-bottom: 0; /* Remove unnecessary spacing */
-}
+
+
 
 /* Footer Icon Styling */
 footer a i {
@@ -117,7 +112,7 @@ footer a i:hover {
 }
 
 /* Footer Link Styling */
-footer a {
+footer a,h5 {
     text-decoration: none; /* Remove underline */
     color: #ffdd00; /* Bright yellow for better visibility */
     transition: color 0.3s ease; /* Smooth hover effect */
@@ -127,6 +122,37 @@ footer a:hover {
     color: #ffffff; /* Change to white on hover */
 }
 
+
+/* Testimonials Section Styling */
+#reviews {
+    background: linear-gradient(135deg, #001f3f, #0a2a5e); /* Dark blue gradient */
+    padding: 3rem 1rem;
+    border-radius: 10px;
+}
+
+#reviews h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    color: #ffdd00; /* Yellow for heading */
+    margin-bottom: 2rem;
+}
+
+.testimonial-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f8f9fa; /* Light text for readability */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-author {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffdd00; /* Yellow for author names */
+    margin-top: 1rem;
+}
 
 
 /* Logo Styling */
@@ -168,6 +194,35 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     font-size: 1rem; /* Ensure consistent font size */
+}
+
+/* Dropdown Button Styling */
+.dropdown-toggle {
+    background-color: #ffdd00; /* Yellow background to match theme */
+    color: #001f3f; /* Dark blue text for contrast */
+    border: none; /* Remove border */
+    text-align: left; /* Align text to the left */
+}
+
+.dropdown-toggle:hover {
+    background-color: #ffc107; /* Slightly darker yellow on hover */
+    color: #001f3f;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    background-color: #001f3f; /* Dark blue background */
+    color: #f8f9fa; /* Light text for readability */
+}
+
+.dropdown-menu a {
+    color: #f8f9fa; /* Light text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown-menu a:hover {
+    background-color: #0dbcd3; /* Light blue background on hover */
+    color: #ffffff; /* White text on hover */
 }
 
 /* Add extra margin for small screens */
