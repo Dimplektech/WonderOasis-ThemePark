@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tickets - WonderOasis ThemePark</title>
+    <title>Food Court - WonderOasis ThemePark</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-white active dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
                             <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
                                 <li><a class="dropdown-item" href="atrractions.html">Attractions</a></li>
                                 <li><a class="dropdown-item" href="water_park.html">Water Park</a></li>
@@ -36,7 +36,7 @@
                                 <li><a class="dropdown-item" href="food.html">Food Court</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link text-white active" href="tickets.html">Tickets</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="tickets.html">Tickets</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -46,27 +46,25 @@
 
     <!-- Main Section -->
     <main class="container my-sm-3">
-        <section id="tickets" class="mt-5 pt-5">
-            <h2 class="text-center mb-4">Tickets</h2>
-            <p class="text-center">Find the perfect ticket for your adventure!</p>
-            <!-- Add your ticket pricing and details here -->
+        <section id="food-court" class="mt-5 pt-5">
+            <h2 class="text-center mb-4">Food Court</h2>
+            <p class="text-center">Explore a variety of delicious food options at WonderOasis!</p>
+            <!-- Add your food court content here -->
         </section>
     </main>
 
-
     <!-- Footer Section -->
-   
     <div class="container-fluid footer-container text-white py-3">
         <footer class="py-3">
             <div class="row d-flex justify-content-center text-start">
                 <div class="col-12 col-md-2 mb-3">
                     <h5>Booking</h5>
                     <div class="dropdown d-md-none"> <!-- Dropdown for small screens -->
-                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="bookingDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
+                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="bookingDropdown1" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
                             Booking
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="bookingDropdown">
-                            <li><a class="drop</ul>down-item" href="#">Prices</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="bookingDropdown1">
+                            <li><a class="dropdown-item" href="#">Prices</a></li>
                             <li><a class="dropdown-item" href="#">Schools</a></li>
                             <li><a class="dropdown-item" href="#">Events</a></li>
                             <li><a class="dropdown-item" href="#">FAQs</a></li>
@@ -83,7 +81,7 @@
                 <div class="col-12 col-md-2 mb-3">
                     <h5>About us</h5>
                     <div class="dropdown d-md-none"> <!-- Dropdown for small screens -->
-                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="bookingDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
+                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="aboutDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
                             About us
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
@@ -91,7 +89,6 @@
                             <li><a class="dropdown-item" href="#">Our Community</a></li>
                             <li><a class="dropdown-item" href="#">Blog</a></li>
                             <li><a class="dropdown-item" href="#">Recruitment</a></li>
-                      
                         </ul>
                     </div>
                     <ul class="nav flex-column d-none d-md-block"> <!-- Regular list for larger screens -->
@@ -105,10 +102,9 @@
                 <div class="col-12 col-md-2 mb-3">
                     <h5>Legal</h5>
                     <div class="dropdown d-md-none"> <!-- Dropdown for small screens -->
-                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="bookingDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
+                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="legalDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
                             Legal
                         </button>
-                        
                         <ul class="dropdown-menu" aria-labelledby="legalDropdown">
                             <li><a class="dropdown-item" href="#">Website T&C's</a></li>
                             <li><a class="dropdown-item" href="#">Features</a></li>
@@ -117,7 +113,6 @@
                             <li><a class="dropdown-item" href="#">About</a></li>
                         </ul>
                     </div>
-
                     <ul class="nav flex-column d-none d-md-block"> <!-- Regular list for larger screens -->
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Website T&C's</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Features</a></li>
@@ -155,9 +150,7 @@
         </footer>
     </div>
 
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://fonts.googleapis.com/css2?family=Handle&display=swap"></script>
 </body>
 </html>
