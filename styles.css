@@ -23,6 +23,7 @@ body h1{
     color: #e00909;
     
 }
+
 /* Updated style for the header h1 */
 header p {
     font-family: "Sail", system-ui;
@@ -98,7 +99,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-top: 100px; /* Space from the top */
 }
-main h1,h2,h3{
+main h1,h2,h3,h5{
     font-family: "Sail", system-ui;
 
     font-weight: 600;
@@ -107,6 +108,8 @@ main h1,h2,h3{
    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Adds depth */
     margin: 0;
 }
+
+
 
 /* Style for footer */
 /* Footer List Styling */
@@ -222,6 +225,16 @@ footer a:hover {
     flex-direction: column;
     justify-content: space-between;
 }
+.card-title{
+    font-family: "Sail", system-ui;
+    font-weight: 600;
+    font-style: normal;
+   color: rgb(248, 30, 30);
+   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Adds depth */
+    margin: 0;
+
+    
+}
 
 #attractions .card-text {
     
@@ -232,9 +245,9 @@ footer a:hover {
     margin: 0 auto;
     padding: 10px; /* Add padding for better spacing */
 }
-#attractions h5{
+/* #attractions h5{
     font-weight: bold;
-    color: #f7d606; /* Yellow for author names */
+    color: #f7d606; Yellow for author names */
 }
 /* Ensure all buttons inside cards have the same height */
 .card .btn {
