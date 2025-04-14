@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form - WonderOasis ThemePark</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">One-Day Booking Form</h1>
+        <form>
+            <!-- Personal Information -->
+            <div class="mb-4">
+                <h4>Personal Information</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="mb-4">
+                <h4>Contact Information</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Details -->
+            <div class="mb-4">
+                <h4>Booking Details</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="visitDate" class="form-label">Date of Visit</label>
+                        <input type="date" class="form-control" id="visitDate" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="numGuests" class="form-label">Total Number of Guests</label>
+                        <input type="number" class="form-control" id="numGuests" placeholder="Enter total number of guests" min="1" required>
+                    </div>
+                </div>
+                <div class="row g-3 mt-3">
+                    <div class="col-md-4">
+                        <label for="numAdults" class="form-label">Number of Adults</label>
+                        <input type="number" class="form-control" id="numAdults" placeholder="Enter number of adults" min="0" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="numChildren" class="form-label">Number of Children</label>
+                        <input type="number" class="form-control" id="numChildren" placeholder="Enter number of children" min="0" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="numSeniors" class="form-label">Number of Seniors</label>
+                        <input type="number" class="form-control" id="numSeniors" placeholder="Enter number of seniors" min="0" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Information -->
+            <div class="mb-4">
+                <h4>Payment Information</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="expiryDate" class="form-label">Expiry Date</label>
+                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

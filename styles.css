@@ -245,10 +245,8 @@ footer a:hover {
     margin: 0 auto;
     padding: 10px; /* Add padding for better spacing */
 }
-/* #attractions h5{
-    font-weight: bold;
-    color: #f7d606; Yellow for author names */
-}
+
+
 /* Ensure all buttons inside cards have the same height */
 .card .btn {
     height: 40px; /* Set a fixed height */
@@ -303,6 +301,32 @@ footer a:hover {
 .btn-primary:hover {
     background-color: #0a9bb5; /* Darker blue on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.photo-collage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .photo-collage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .photo-collage {
+        grid-template-columns: 1fr;
+    }
 }
 
 
