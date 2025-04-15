@@ -65,7 +65,10 @@
                                 <li>Valid for one day</li>
                                 <li>Free parking included</li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <!-- Button to Open Modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                            Book Now
+                        </button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +84,9 @@
                                 <li>Exclusive discounts on food and merchandise</li>
                                 <li>Priority access to events</li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#annualPassModal">
+                                Book Now
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -97,7 +102,10 @@
                                 <li>Access to all attractions</li>
                                 <li>Free group photo</li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <!-- Button to Open Modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#groupTicketsModal">
+                                Book Now
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -113,12 +121,95 @@
                                 <li>Educational tours included</li>
                                 <li>Complimentary tickets for teachers</li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <!-- Button to Open Modal, Modal is at the end of </body> tag -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#schoolBookingModal">
+                                Book Now
+                            </button>
+
+                            <!-- Modal for School Tickets Booking -->
+                            <div class="modal fade" id="schoolBookingModal" tabindex="-1" aria-labelledby="schoolBookingModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title text-center w-100" id="schoolBookingModalLabel">School Trip Booking</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Embed school-booking-form.html -->
+                                            <iframe src="school-booking-form.html" style="width: 100%; height: 500px; border: none;"></iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+    
+            
+    <!-- Modal for Day Ticket -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title text-center w-100" id="bookingModalLabel">Day Ticket Booking</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Embed daytickets.html -->
+                        <iframe src="daytickets.html" style="width: 100%; height: 500px; border: none;"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <!-- Modal for Annual Pass Booking -->
+        <div class="modal fade" id="annualPassModal" tabindex="-1" aria-labelledby="annualPassModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title text-center w-100" id="annualPassModalLabel">Annual Pass Booking</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Embed annual-pass-booking.html -->
+                        <iframe src="annual-pass-booking.html" style="width: 100%; height: 500px; border: none;"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+        <!-- Modal for Group Tickets Booking -->
+        <div class="modal fade" id="groupTicketsModal" tabindex="-1" aria-labelledby="groupTicketsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title text-center w-100" id="groupTicketsModalLabel">Group Tickets Booking</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Embed group-tickets-booking.html -->
+                        <iframe src="group-tickets-booking.html" style="width: 100%; height: 500px; border: none;"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
 
