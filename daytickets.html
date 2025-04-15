@@ -17,7 +17,7 @@
             const numSeniors = parseInt(document.getElementById("numSeniors").value) || 0;
 
             const totalAmount = (numAdults * adultPrice) + (numChildren * childPrice) + (numSeniors * seniorPrice);
-            document.getElementById("totalAmount").innerText = `$${totalAmount}`;
+            document.getElementById("totalAmount").innerText = `£${totalAmount}`;
         }
     </script>
 </head>
@@ -78,26 +78,26 @@
             <div class="row g-3">
                 <div class="col-md-4">
                     <label for="numAdults" class="form-label fw-bold">Number of Adults</label>
-                    <small class="d-block text-muted">Price per adult: $50</small>
+                    <small class="d-block" style="color: blue">Price per adult: £50</small>
                     <input type="number" class="form-control" id="numAdults" placeholder="0" min="0" onchange="calculateTotal()" required>
                 </div>
                 <div class="col-md-4">
                     <label for="numChildren" class="form-label fw-bold">Number of Children</label>
-                    <small class="d-block text-muted">Price per child: $30</small>
+                    <small class="d-block" style="color: blue">Price per child: £30</small>
                     <input type="number" class="form-control" id="numChildren" placeholder="0" min="0" onchange="calculateTotal()" required>
                 </div>
                 <div class="col-md-4">
                     <label for="numSeniors" class="form-label fw-bold">Number of Seniors</label>
-                    <small class="d-block text-muted">Price per senior: $40</small>
+                    <small class="d-block" style="color: blue">Price per senior: £40</small>
                     <input type="number" class="form-control" id="numSeniors" placeholder="0" min="0" onchange="calculateTotal()" required>
                 </div>
             </div>
-        </div>
+        </div> 
 
         <!-- Total Amount -->
         <div class="mb-4">
             <h4>Total Amount</h4>
-            <p class="fs-5"><strong>Total: <span id="totalAmount">$0</span></strong></p>
+            <p class="fs-5" ><strong>Total: <span id="totalAmount" style="color: blue">£0</span></strong></p>
         </div>
 
         <hr>

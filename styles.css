@@ -23,6 +23,13 @@ body h1{
     color: #e00909;
     
 }
+.nav-link.active {
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Bright blue for a lively and inviting look */
+    border-radius: 5px; /* Rounded corners for a modern look */
+
+}
 
 /* Updated style for the header h1 */
 header p {
@@ -316,6 +323,34 @@ footer a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* FAQ section */
+#faq button{
+    font-family:  sans-serif;
+    /* background-color: #0dbcd3; Light blue to match the theme */
+    
+    
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+
+}
+#faq button:hover{
+    background-color: #61d9f1; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#faq .accordion-body{
+    font-family: sans-serif;
+    font-size: 1rem; /* Adjust font size for better readability */
+    line-height: 1.6; /* Increase line height for better spacing */
+    color: #333; /* Dark text for contrast */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+
+}
+
+
 
 @media (max-width: 768px) {
     .photo-collage {

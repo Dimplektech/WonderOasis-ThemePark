@@ -24,20 +24,30 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <!-- Collapsible Navigation Menu -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="index.html" aria-label="Navigate to Home">Home</a>
+                        </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-white active dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-                            <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
-                                <li><a class="dropdown-item" href="atrractions.html">Attractions</a></li>
-                                <li><a class="dropdown-item" href="water_park.html">Water Park</a></li>
-                                <li><a class="dropdown-item" href="Zoo.html">Zoo</a></li>
-                                <li><a class="dropdown-item" href="food.html">Food Court</a></li>
+                            <a class="nav-link dropdown-toggle text-white active" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                            <ul class="dropdown-menu" aria-labelledby="exploreDropdown" >
+                                <li><a class="dropdown-item text-white" href="atrractions.html">Attractions</a></li>
+                                <li><a class="dropdown-item text-white" href="water_park.html">Water Park</a></li>
+                                <li><a class="dropdown-item text-white" href="zoo.html">Zoo</a></li>
+                                <li><a class="dropdown-item text-white" href="food.html">Food Court</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link text-white" href="tickets.html">Tickets</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="tickets.html">Tickets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about_us.html">About us</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -55,7 +65,7 @@
         <section id="attractions" >
               <!-- Family Rides Section -->
               <section id="family-rides" class="mt-5">
-                <h2 class="text-center mb-2">Family Rides</h2>
+                <h1 class="text-center mb-2" style="color: blue;">Family Rides</h1>
                 <p class="text-center">Fun and excitement for the whole family!</p>
                 <div class="row mt-5">
                     <div class="col-md-4">
@@ -257,9 +267,10 @@
     </main>
 
 
-    <!-- Footer Section -->
    
-    <div class="container-fluid footer-container text-white py-3">
+      <!-- Footer Section -->
+   
+      <div class="container-fluid footer-container text-white py-3">
         <footer class="py-3">
             <div class="row d-flex justify-content-center text-start">
                 <div class="col-12 col-md-2 mb-3">
@@ -269,64 +280,63 @@
                             Booking
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="bookingDropdown">
-                            <li><a class="drop</ul>down-item" href="#">Prices</a></li>
-                            <li><a class="dropdown-item" href="#">Schools</a></li>
+                            <li><a class="dropdown-item" href="tickets.html">Prices</a></li>
+                            <li><a class="dropdown-item" href="tickets.html#school-ticket-card">Schools</a></li>
                             <li><a class="dropdown-item" href="#">Events</a></li>
-                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#faq">FAQs</a></li>
                         </ul>
                     </div>
                     <ul class="nav flex-column d-none d-md-block"> <!-- Regular list for larger screens -->
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Prices</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Schools</a></li>
+                        <li class="nav-item mb-2"><a href="tickets.html" class="nav-link p-0 text-start">Prices</a></li>
+                        <li class="nav-item mb-2"><a href="tickets.html#school-ticket-card" class="nav-link p-0 text-start">Schools</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Events</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="about_us.html#faq" class="nav-link p-0 text-start">FAQs</a></li>
                     </ul>
                 </div>
 
                 <div class="col-12 col-md-2 mb-3">
                     <h5>About us</h5>
                     <div class="dropdown d-md-none"> <!-- Dropdown for small screens -->
-                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="bookingDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
+                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="aboutDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
                             About us
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="#">Our Story</a></li>
-                            <li><a class="dropdown-item" href="#">Our Community</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Recruitment</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#our-story">Our Story</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#our-community">Our Community</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#blog">Blog</a></li>
+                            <li><a class="dropdown-item" href="about_us.html#recruitment">Recruitment</a></li>
                       
                         </ul>
                     </div>
                     <ul class="nav flex-column d-none d-md-block"> <!-- Regular list for larger screens -->
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Our Story</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Our Community</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Blog</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Recruitment</a></li>
+                        <li class="nav-item mb-2"><a href="about_us.html#our-story" class="nav-link p-0 text-start">Our Story</a></li>
+                        <li class="nav-item mb-2"><a href="about_us.html#our-community" class="nav-link p-0 text-start">Our Community</a></li>
+                        <li class="nav-item mb-2"><a href="about_us.html#blog" class="nav-link p-0 text-start">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="about_us.html#recruitment" class="nav-link p-0 text-start">Recruitment</a></li>
                     </ul>
                 </div>
 
                 <div class="col-12 col-md-2 mb-3">
                     <h5>Legal</h5>
                     <div class="dropdown d-md-none"> <!-- Dropdown for small screens -->
-                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="bookingDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
+                        <button class="btn btn-primary dropdown-toggle text-center" type="button" id="legalDropdown" data-bs-toggle="dropdown" style="width: fit-content; min-width: auto;">
                             Legal
                         </button>
                         
                         <ul class="dropdown-menu" aria-labelledby="legalDropdown">
                             <li><a class="dropdown-item" href="#">Website T&C's</a></li>
                             <li><a class="dropdown-item" href="#">Features</a></li>
-                            <li><a class="dropdown-item" href="#">Pricing</a></li>
-                            <li><a class="dropdown-item" href="#">FAQs</a></li>
-                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="tickets.html">Pricing</a></li>
+                            
+                            <li><a class="dropdown-item" href="about_us.html">About</a></li>
                         </ul>
                     </div>
 
                     <ul class="nav flex-column d-none d-md-block"> <!-- Regular list for larger screens -->
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Website T&C's</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-start">About</a></li>
+                        <li class="nav-item mb-2"><a href="tickets.html" class="nav-link p-0 text-start">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="about_us.html" class="nav-link p-0 text-start">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -357,6 +367,8 @@
             </div>
         </footer>
     </div>
+
+    
 
 
     <!-- Bootstrap JS -->
