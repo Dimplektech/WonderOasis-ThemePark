@@ -10,8 +10,7 @@ body {
         font-family: sans-serif;
         font-weight: 400;
         font-style: normal;
-      
-       
+        padding-top: 50px; /* Adjust this value based on the header height */
 }
 
 /* Optional: Ensure headings and other elements inherit the font */
@@ -43,6 +42,7 @@ header p {
 /* Updated background color for the navbar */
 header {
     background-color: #007bff; /* Bright blue for a lively and inviting look */
+    height: 150px; /* Adjust this value as needed */
 }
 header h1 {
     font-family: "Sail", system-ui;
@@ -106,7 +106,7 @@ main {
     padding: 2rem 1rem; /* Padding for spacing */
     border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 100px; /* Space from the top */
+    margin-top: 250px; /* Space from the top */
 }
 main h3,h5{
     font-family: "Sail", system-ui;
@@ -371,6 +371,6 @@ footer a:hover {
 /* Add extra margin for small screens */
 @media (max-width: 768px) {
     main {
-        margin-top: 100px; /* Adjust this value as needed */
+        margin-top: 150px; /* Adjust this value as needed */
     }
 }
