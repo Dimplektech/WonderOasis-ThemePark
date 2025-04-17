@@ -354,10 +354,10 @@ footer a:hover {
 }
 
 section{
-    padding: 2rem 1rem; /* Padding for spacing */
+     padding: 1rem 1rem; /*Padding for spacing */
     border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 50px; /* Space from the top */
+    margin-top: 20px; /* Space from the top */
 }
 
 
@@ -369,12 +369,16 @@ section{
         padding-top: 0px; /* Adjust this value based on the header height */
         margin-top: 0px; /* Adjust this value as needed */
     }
+    #zoo-container{
+        padding-top: 0px; /* Adjust this value based on the header height */
+        margin-top: 0px; /* Adjust this value as needed */
+    }
    
 }
 
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .photo-collage {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -384,22 +388,29 @@ section{
         margin-top: 50px; /* Adjust this value as needed */
 
     }
-}
-@media (max-width: 992px) {
-    
-    #index-container{
-        padding-top: 50px; /* Adjust this value based on the header height */
-        margin-top: 50px; /* Adjust this value as needed */
+    #zoo-container{
+       
+        margin-top:0px; /* Adjust this value as needed */
+        padding-top: 100px; /* Adjust this value based on the header height */
     }
-   
+    }
 
-    #home{
-        padding-top: 0px; /* Adjust this value based on the header height */
-        margin-top: 0px; /* Adjust this value as needed */
-    }
+
+    @media screen and (min-width: 992px) {
+        
+        #index-container{
+            padding-top: 50px; /* Adjust this value based on the header height */
+            margin-top: 50px; /* Adjust this value as needed */
+        }
+   
+        
+        #home{
+            padding-top: 0px; /* Adjust this value based on the header height */
+            margin-top: 0px; /* Adjust this value as needed */
+        }
    
 }
-@media (max-width: 1200px) {
+@media  screen and(min-width: 1200px) {
     
     #index-container{
         padding-top: 100px; /* Adjust this value based on the header height */
@@ -409,6 +420,7 @@ section{
         padding-top: 0px; /* Adjust this value based on the header height */
         margin-top: 0px; /* Adjust this value as needed */
     }
+   
    
 }
 
