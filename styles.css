@@ -411,8 +411,8 @@ section{
         grid-template-columns: 1fr;
     }
     #home{
-        padding-top: 0px; /* Adjust this value based on the header height */
-        margin-top: 0px; /* Adjust this value as needed */
+        padding-top: 50px; /* Adjust this value based on the header height */
+        margin-top: 50px; /* Adjust this value as needed */
     }
     #zoo-container{
         padding-top: 0px; /* Adjust this value based on the header height */
