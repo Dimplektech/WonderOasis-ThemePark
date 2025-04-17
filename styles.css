@@ -155,6 +155,9 @@ footer a:hover {
     color: #ffffff; /* Change to white on hover */
 }
 
+.row{
+    display: flex;
+}
 
 /* Testimonials Section Styling */
 #reviews {
@@ -187,8 +190,8 @@ footer a:hover {
 
 /* Logo Styling */
 .logo {
-    height: 80px; /* Set a fixed height */
-    width: 80px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    width: 60px; /* Set a fixed width */
     object-fit: cover; /* Ensures the image scales properly without distortion */
     border-radius: 50%; /* Keeps the logo circular */
 }
