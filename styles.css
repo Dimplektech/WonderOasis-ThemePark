@@ -353,24 +353,62 @@ footer a:hover {
 
 }
 
-
-
-@media (max-width: 768px) {
-    .photo-collage {
-        grid-template-columns: repeat(2, 1fr);
-    }
+section{
+    padding: 2rem 1rem; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 50px; /* Space from the top */
 }
+
 
 @media (max-width: 576px) {
     .photo-collage {
         grid-template-columns: 1fr;
     }
+    #home{
+        padding-top: 0px; /* Adjust this value based on the header height */
+        margin-top: 0px; /* Adjust this value as needed */
+    }
+   
 }
 
 
-/* Add extra margin for small screens */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-    main {
-        margin-top: 150px; /* Adjust this value as needed */
+    .photo-collage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #index-container{
+        padding-top: 50px; /* Adjust this value based on the header height */
+        margin-top: 50px; /* Adjust this value as needed */
+
     }
 }
+@media (max-width: 992px) {
+    
+    #index-container{
+        padding-top: 50px; /* Adjust this value based on the header height */
+        margin-top: 50px; /* Adjust this value as needed */
+    }
+   
+
+    #home{
+        padding-top: 0px; /* Adjust this value based on the header height */
+        margin-top: 0px; /* Adjust this value as needed */
+    }
+   
+}
+@media (max-width: 1200px) {
+    
+    #index-container{
+        padding-top: 100px; /* Adjust this value based on the header height */
+        margin-top: 50px; /* Adjust this value as needed */
+    }
+    #home{
+        padding-top: 0px; /* Adjust this value based on the header height */
+        margin-top: 0px; /* Adjust this value as needed */
+    }
+   
+}
+
