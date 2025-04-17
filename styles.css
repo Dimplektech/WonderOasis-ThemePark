@@ -10,7 +10,7 @@ body {
         font-family: sans-serif;
         font-weight: 400;
         font-style: normal;
-        padding-top: 50px; /* Adjust this value based on the header height */
+        padding-top: 70px; 
 }
 
 /* Optional: Ensure headings and other elements inherit the font */
@@ -24,13 +24,8 @@ body h1,h2{
     font-weight: 600;
     
 }
-.nav-link.active {
-    font-weight: bold;
-    color: #fff;
-    background-color: #007bff; /* Bright blue for a lively and inviting look */
-    border-radius: 5px; /* Rounded corners for a modern look */
 
-}
+
 
 /* Updated style for the header h1 */
 header p {
@@ -41,8 +36,8 @@ header p {
 
 /* Updated background color for the navbar */
 header {
-    background-color: #007bff; /* Bright blue for a lively and inviting look */
-    height: 150px; /* Adjust this value as needed */
+    background: linear-gradient(90deg, #0dbcd3, #001380) !important; /* Green to teal gradient */
+    height: 150px; /* Adjust as needed */
 }
 header h1 {
     font-family: "Sail", system-ui;
@@ -106,7 +101,7 @@ main {
     padding: 2rem 1rem; /* Padding for spacing */
     border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 250px; /* Space from the top */
+    margin-top: 20px; /* Space from the top */
 }
 main h3,h5{
     font-family: "Sail", system-ui;
@@ -280,10 +275,52 @@ footer a:hover {
     color: #001f3f;
 }
 
-/* Dropdown Menu Styling */
+
+/* Navbar background for larger screens */
+header .navbar {
+   background-color: transparent !important; /* Transparent to inherit the header's background */
+}
+
+
+
+/* Ensure the collapsed navbar menu is visible */
+
+/* Style for navbar links */
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    font-size: 1rem; /* Adjust font size for better readability */
+}
+
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+    color: #ffdd00; /* Yellow text on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+.navbar {
+    background-color: transparent !important; /* Transparent background */
+}
+
+
 .dropdown-menu {
     background-color: #001f3f; /* Dark blue background */
-    color: #f8f9fa; /* Light text for readability */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+}
+/* Change dropdown item hover color */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #4490db; /* Slightly lighter dark color */
+    color: #ffffff; /* Keep text white */
+}
+/* Navbar toggler icon */
+.navbar-toggler-icon {
+    filter: invert(1); /* Make the toggler icon white */
+}
+
+/* Ensure dropdown items have white text */
+.dropdown-menu .dropdown-item {
+    color: #ffffff;
 }
 
 .dropdown-menu a {
@@ -295,6 +332,14 @@ footer a:hover {
     background-color: #0dbcd3; /* Light blue background on hover */
     color: #ffffff; /* White text on hover */
 }
+/* change background color of the active link */
+.nav-link.active {
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Bright blue for a lively and inviting look */
+    border-radius: 5px; /* Rounded corners for a modern look */
+}  
+
 
 /* Custom Button Styling */
 /* Button Styling */
@@ -379,28 +424,34 @@ section{
 
 /* Responsive adjustments for smaller screens */
 @media screen and (min-width: 768px) {
-    .photo-collage {
-        grid-template-columns: repeat(2, 1fr);
-    }
+        .photo-collage {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-    #index-container{
-        padding-top: 50px; /* Adjust this value based on the header height */
-        margin-top: 50px; /* Adjust this value as needed */
-
-    }
-    #zoo-container{
        
-        margin-top:0px; /* Adjust this value as needed */
-        padding-top:0px; /* Adjust this value based on the header height */
-    }
+        #zoo-container{
+        
+            margin-top:0px; /* Adjust this value as needed */
+            padding-top:0px; /* Adjust this value based on the header height */
+        }
     }
 
 
-    @media screen and (min-width: 992px) {
+@media (max-width: 767px) { /* Apply only for screens smaller than 768px */
+        .navbar-collapse {
+            background-color: #001f3f; /* Dark blue background for the collapsed menu */
+            color: #ffffff; /* White text for better visibility */
+            padding: 1rem; /* Add padding for spacing */
+            border-radius: 5px; /* Rounded corners for a modern look */
+        }
+    }
+
+
+@media screen and (min-width: 992px) {
         
         #index-container{
-            padding-top: 50px; /* Adjust this value based on the header height */
-            margin-top: 50px; /* Adjust this value as needed */
+            padding-top: 30px; /* Adjust this value based on the header height */
+            margin-top: 30px; /* Adjust this value as needed */
         }
    
         
@@ -408,19 +459,15 @@ section{
             padding-top: 0px; /* Adjust this value based on the header height */
             margin-top: 0px; /* Adjust this value as needed */
         }
+        .navbar-collapse {
+            background-color: transparent !important; /* Transparent for larger screens */
+        }
+        #zoo-container{
+        
+            margin-top:50px; /* Adjust this value as needed */
+            padding-top:50px; /* Adjust this value based on the header height */
+        }
    
 }
-@media  screen and(min-width: 1200px) {
-    
-    #index-container{
-        padding-top: 100px; /* Adjust this value based on the header height */
-        margin-top: 50px; /* Adjust this value as needed */
-    }
-    #home{
-        padding-top: 0px; /* Adjust this value based on the header height */
-        margin-top: 0px; /* Adjust this value as needed */
-    }
-   
-   
-}
+
 
