@@ -391,7 +391,7 @@ section{
     #zoo-container{
        
         margin-top:0px; /* Adjust this value as needed */
-        padding-top: 100px; /* Adjust this value based on the header height */
+        padding-top:0px; /* Adjust this value based on the header height */
     }
     }
 
