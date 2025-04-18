@@ -98,7 +98,7 @@ header nav ul li a:hover {
 /* Style for the main content area */
 main {
     background-color: #f8f9fa; /* Light background for contrast */
-    padding: 2rem 1rem; /* Padding for spacing */
+    padding: 0px ; 
     border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-top: 20px; /* Space from the top */
@@ -307,6 +307,8 @@ header .navbar {
 
 
 .dropdown-menu {
+    position: absolute; /* Ensure it is positioned relative to the navbar */
+    z-index: 1060; /* Higher than the opening times section */
     background-color: #001f3f; /* Dark blue background */
     color: #ffffff; /* White text */
     border: none; /* Remove border */
@@ -323,6 +325,7 @@ header .navbar {
 
 /* Ensure dropdown items have white text */
 .dropdown-menu .dropdown-item {
+
     color: #ffffff;
 }
 
@@ -401,12 +404,26 @@ header .navbar {
 
 }
 
+
 section{
      padding: 1rem 1rem; /*Padding for spacing */
     border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-top: 20px; /* Space from the top */
 }
+/* Opening Times Section */
+section.bg-gradient {
+    margin-top: 0px;
+    font-size: 1rem; /* Adjust font size */
+}
+  /* Ensure the opening hours section stays fixed below the navbar */
+  header section {
+    position: relative; /* Keep the opening hours section in place */
+    z-index: 1000; /* Ensure it appears below the toggle menu */
+}
+
+
+
 
 
 @media (max-width: 576px) {
@@ -417,12 +434,42 @@ section{
         padding-top: 50px; /* Adjust this value based on the header height */
         margin-top: 50px; /* Adjust this value as needed */
     }
-    #zoo-container{
+    #zoo-container #index-container{
         padding-top: 0px; /* Adjust this value based on the header height */
         margin-top: 0px; /* Adjust this value as needed */
     }
-   
+    section.bg-gradient {
+        padding: 0.5rem 0; /* Reduce padding on smaller screens */
+    }
+
+    section.bg-gradient p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        color: #f8f9fa;
+    }
+    .navbar-collapse {
+        padding: 1rem; /* Add padding for better spacing */
+    }
+
+    header section {
+        padding: 0.5rem 0; /* Reduce padding for smaller screens */
+    }
+    .navbar-collapse {
+        position: absolute; /* Position the toggle menu above the opening hours */
+        top: 100%; /* Place it just below the navbar */
+        left: 0;
+        right: 0;
+        z-index: 1050; /* Ensure it appears above other elements */
+        background-color: #001f3f; /* Match the navbar background color */
+        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a border for separation */
+    }
+        /* Adjust padding for the body to account for the fixed header and opening hours */
+    body {
+        padding-top:150px; /* Adjust based on the combined height of the navbar and opening hours */
+    }
+  
 }
+   
+
 
 
 /* Responsive adjustments for smaller screens */
@@ -437,15 +484,16 @@ section{
             margin-top:0px; /* Adjust this value as needed */
             padding-top:0px; /* Adjust this value based on the header height */
         }
+       
     }
 
 
 @media (max-width: 767px) { /* Apply only for screens smaller than 768px */
-        .navbar-collapse {
-            background-color: #001f3f; /* Dark blue background for the collapsed menu */
-            color: #ffffff; /* White text for better visibility */
-            padding: 1rem; /* Add padding for spacing */
-            border-radius: 5px; /* Rounded corners for a modern look */
+        
+        
+        #index-container{
+            padding-top: 0px; /* Adjust this value based on the header height */
+            margin-top: 70px; /* Adjust this value as needed */
         }
     }
 
