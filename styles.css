@@ -30,8 +30,7 @@ body h1,h2{
 /* Updated style for the header h1 */
 header p {
     font-family: "Sail", system-ui;
-    
-    
+     
 }
 
 /* Updated background color for the navbar */
@@ -139,10 +138,6 @@ footer a i {
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
-footer a i:hover {
-    color: #ffffff; /* Change to white on hover */
-    transform: scale(1.2); /* Slight zoom effect on hover */
-}
 
 /* Footer Link Styling */
 footer a,h5 {
@@ -151,6 +146,7 @@ footer a,h5 {
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Social media icons */
 footer a:hover {
     color: #ffffff; /* Change to white on hover */
 }
@@ -364,19 +360,6 @@ header .navbar {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-.photo-collage {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.photo-collage img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
 /* FAQ section */
 #faq button{
