@@ -12,14 +12,15 @@ body {
 }
 
 /* Optional: Ensure headings and other elements inherit the font */
- h2, h3, h4, h5, h6, p, a, li {
+  h3, h4, h5, h6, p, a, li {
     font-family: inherit;
 }
 
 body h1,h2{
     color: blue;
-    font-family: "Sail", system-ui;
-    font-weight: 600;
+     font-family: "Poetsen One", sans-serif;
+     font-weight: 400;
+     font-style: normal;
     
 }
 
@@ -37,8 +38,8 @@ header {
     height: 150px; /* Adjust as needed */
 }
 header h1 {
-    font-family: "Sail", system-ui;
-    font-weight: 600;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
     font-style: normal;
    color: white;
    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Adds depth */
@@ -101,9 +102,8 @@ main {
     margin-top: 20px; /* Space from the top */
 }
 main h3,h5{
-    font-family: "Sail", system-ui;
-
-    font-weight: 600;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 200;
     font-style: normal;
    color: rgb(248, 30, 30);
    /* text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); Adds depth */
@@ -227,9 +227,8 @@ footer a:hover {
     justify-content: space-between;
 }
 .card-title{
-    font-size: 1.5rem;
-    font-family: "Sail", system-ui;
-    font-weight: 600;
+    font-family: "Poetsen One", sans-serif;
+   
     font-style: normal;
     color: rgb(248, 30, 30);
    /* text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); Adds depth */
