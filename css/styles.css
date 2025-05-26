@@ -1,12 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Script&family=Macondo&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sail&display=swap');
 /* Apply the font-family globally */
 
 
 body {
-    font-family: 'Poppins', sans-serif; /* Default font for the body */
+    font-family: "poppins", sans-serif; /* Default font for the body */
         font-family: sans-serif;
-        font-weight: 400;
+        font-weight: 200;
         font-style: normal;
         padding-top: 70px; 
 }
@@ -19,7 +19,7 @@ body {
 body h1,h2{
     color: blue;
      font-family: "Poetsen One", sans-serif;
-     font-weight: 400;
+     font-weight: 200;
      font-style: normal;
     
 }
@@ -38,8 +38,8 @@ header {
     height: 150px; /* Adjust as needed */
 }
 header h1 {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
+    font-family: "Sail", system-ui;
+    font-weight: 600;
     font-style: normal;
    color: white;
    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Adds depth */
