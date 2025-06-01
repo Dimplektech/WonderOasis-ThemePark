@@ -3,6 +3,11 @@
 /* Apply the font-family globally */
 
 
+link[rel="icon"] {
+    border-radius: 50%;
+   
+}
+
 body {
     font-family: "poppins", sans-serif; /* Default font for the body */
         font-family: sans-serif;
