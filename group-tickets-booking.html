@@ -43,23 +43,34 @@
                 </div>
             </div>
 
-                <!-- Group Details -->
+    <!-- Group Details -->
     <div class="mb-4">
-        <h4>Group Details</h4>
+        <h4>Group Tickets Selection</h4>
+        <!-- Visit Date Picker -->
+        <div class="row g-3 mb-3">
+            <div class="col-md-6">
+                <label for="visitDate" class="form-label fw-bold">Select Visit Date</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-calendar3"></i></span>
+                    <input type="date" class="form-control" id="visitDate" required>
+                </div>
+                <small class="form-text text-muted">Please select your preferred visit date</small>
+            </div>
+        </div>
         <div class="row g-3">
             <div class="col-md-4">
                 <label for="numAdults" class="form-label fw-bold">Number of Adults</label>
-                <small class="d-block" style="color: blue">Price per adult: $40</small>
+                <small class="d-block" style="color: blue">Price per adult: £40</small>
                 <input type="number" class="form-control" id="numAdults" placeholder="0" min="0" onchange="calculateTotal()" required>
             </div>
             <div class="col-md-4">
                 <label for="numChildren" class="form-label fw-bold">Number of Children</label>
-                <small class="d-block" style="color: blue">Price per child: $30</small>
+                <small class="d-block" style="color: blue">Price per child: £30</small>
                 <input type="number" class="form-control" id="numChildren" placeholder="0" min="0" onchange="calculateTotal()" required>
             </div>
             <div class="col-md-4">
                 <label for="numSeniors" class="form-label fw-bold">Number of Seniors</label>
-                <small class="d-block" style="color: blue">Price per senior: $35</small>
+                <small class="d-block" style="color: blue">Price per senior: £35</small>
                 <input type="number" class="form-control" id="numSeniors" placeholder="0" min="0" onchange="calculateTotal()" required>
             </div>
         </div>
@@ -68,7 +79,7 @@
     <!-- Total Amount -->
     <div class="mb-4">
         <h4>Total Amount</h4>
-        <p class="fs-5"><strong>Total: <span id="totalAmount" style="color: blue">$0</span></strong></p>
+        <p class="fs-5"><strong>Total: <span id="totalAmount" style="color: blue">£0</span></strong></p>
     </div>
 
             <!-- Terms and Conditions -->
@@ -121,8 +132,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                
-                <h3 class="modal-title" id="receiptModalLabel">WonderOasis ThemePark</h3>
+                                
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="receiptContent">

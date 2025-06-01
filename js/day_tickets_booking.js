@@ -1,8 +1,9 @@
 // JavaScript to calculate total amount dynamically
+ // JavaScript to calculate total amount dynamically
 function calculateTotal() {
-    const adultPrice = 40; // Price per adult
-    const childPrice = 20; // Price per child
-    const seniorPrice = 35; // Price per senior
+    const adultPrice = 50; // Price per adult
+    const childPrice = 30; // Price per child
+    const seniorPrice = 40; // Price per senior
 
     const numAdults = parseInt(document.getElementById("numAdults").value) || 0;
     const numChildren = parseInt(document.getElementById("numChildren").value) || 0;
@@ -10,57 +11,38 @@ function calculateTotal() {
 
     const totalAmount = (numAdults * adultPrice) + (numChildren * childPrice) + (numSeniors * seniorPrice);
     document.getElementById("totalAmount").innerText = `£${totalAmount}`;
-    return { numAdults, numChildren, numSeniors, totalAmount };
 }
-
-// Add valiadtion for trip date
-document.getElementById('visitDate').addEventListener('change',function(){
-    const selectedDate = new Date(this.value);
-    const today = new Date();
-    today.setHours(0, 0, 0, 0); // Set time to midnight for accurate comparison
-    selectedDate.setHours(0, 0, 0, 0); // Set time to midnight for accurate comparison
-    // Check if the trip date is in the past
-    if(selectedDate < today){
-        alert("Please select a future date for the trip.");
-        this.value = ''; // Clear the invalid date
-    }
-});
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Add event listener for date validation
+    document.getElementById('visitDate').addEventListener('change',function(){
+        const visitDate =new Date(this.value);
+        const today =new Date();
+        // Check if the visit date is in the past
+        if(visitDate < today){
+            alert("The visit date cannot be in the past. Please select valid date.");
+            this.value =''; //Reset the input value
+        }
+    })
     // Add event listener for form submission
-    document.getElementById('bookGroupBtn').addEventListener('click', function(event) {
+    document.getElementById('dayTickBookBtn').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent form submission
         
-      
-        
+             
         // Collect form data
-        const leaderFirstName = document.getElementById('leaderFirstName').value;
-        const leaderLastName = document.getElementById('leaderLastName').value;
-        const leaderEmail = document.getElementById('leaderEmail').value;
-        const leaderPhone = document.getElementById('leaderPhone').value;
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
         const numAdults = document.getElementById('numAdults').value;
         const numChildren = document.getElementById('numChildren').value;
         const numSeniors = document.getElementById('numSeniors').value;
         const totalAmount = document.getElementById('totalAmount').innerText;
-        const tripDate = document.getElementById('visitDate').value;
+        const visitDate = document.getElementById('visitDate').value;
 
-         // Format date for display
-        const formattedTripDate = new Date(tripDate).toLocaleDateString('en-GB', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-
-        // Check group size requirement(minimum 10 people)
-        const totalHeads = parseInt(numAdults) + parseInt(numChildren) + parseInt(numSeniors);
-        if(totalHeads < 10){
-            alert("You must book for at least 10 people to proceed with the group booking.");
-            return;
-        }
-
-          // Check if the form is valid        
+        // Check if the form is valid        
         // Get the form element
         const form = document.querySelector('form');
 
@@ -71,6 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
 
         }
+
+         // Format date for display
+        const formattedTripDate = new Date(visitDate).toLocaleDateString('en-GB', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
   
 
         // Generate receipt content with improved design
@@ -92,15 +82,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         <table class="table table-sm">
                             <tr>
                                 <td><strong>Name:</strong></td>
-                                <td>${leaderFirstName} ${leaderLastName}</td>
+                                <td>${firstName} ${lastName}</td>
                             </tr>
                             <tr>
                                 <td><strong>Email:</strong></td>
-                                <td>${leaderEmail}</td>
+                                <td>${email}</td>
                             </tr>
                             <tr>
                                 <td><strong>Phone:</strong></td>
-                                <td>${leaderPhone}</td>
+                                <td>${phone}</td>
                             </tr>
                         </table>
                     </div>
@@ -109,12 +99,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h5 class="mb-3">Visit Details</h5>
                         <table class="table table-sm">
                             <tr>
-                                <td><strong>Visit Date: ${formattedTripDate}</strong></td>
-                                
+                                <td><strong>Visit Date:</strong></td>
+                                <td>${formattedTripDate}</td>
                             </tr>
                             <tr>
-                                <td><strong>Group Size:</strong></td>
-                                <td>${parseInt(numAdults) + parseInt(numChildren) + parseInt(numSeniors)} people</td>
+                                <td><strong>Number of People:</strong></td>
+                                <td>${parseInt(numAdults) + parseInt(numChildren) + parseInt(numSeniors)} </td>
                             </tr>
                         </table>
                     </div>
@@ -162,7 +152,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h5>Important Information</h5>
                     <ul class="small text-muted">
                         <li>Please present this receipt at the entrance on the day of your visit.</li>
-                        <li>Group members must arrive together at the park entrance.</li>
                         <li>Tickets are non-refundable and non-transferable.</li>
                         <li>For any changes or inquiries, please contact us at info@wonderoasis.com or call (123) 456-7890.</li>
                     </ul>
@@ -177,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Display receipt in modal
         document.getElementById('receiptContent').innerHTML = receiptContent;
-        new bootstrap.Modal(document.getElementById('receiptModal')).show();
+        new bootstrap.Modal(document.getElementById('dayTicketsReceiptModal')).show();
     });
 
     // Print receipt functionality
