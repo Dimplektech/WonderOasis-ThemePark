@@ -252,8 +252,8 @@ footer a:hover {
      /* Add padding for better spacing */
     align-items:left;
     color: #130606; /* Dark text for contrast */
-    font-weight: bold; /* Make text bold */
     
+    padding: auto;
 }
 
 
